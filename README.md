@@ -5,8 +5,9 @@ CVAI project to colorize black and white images
 This project uses Python 3.12, so make sure this is installed on your device. Afterwards, the virtual environment creation and dependency installation can both be done by running the script setup_repository.sh as shown below
 
 Linux/macOS: 
+Create .venv, upgrades pip and installs requirements.txt
 ````shell
-./setup_repository.sh
+source setup_repository.sh 
 ````
 
 Windows: 
