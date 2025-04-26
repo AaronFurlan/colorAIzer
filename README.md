@@ -7,3 +7,8 @@ This project uses Python 3.12, so make sure this is installed on your device. Af
 ````shell
 sh setup_repository.sh
 ````
+or in powershell
+
+````powershell
+.\setup_repository.sh
+````
