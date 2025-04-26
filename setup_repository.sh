@@ -1,3 +1,4 @@
-py -3.12 -m venv .env3
-source .env3/Scripts/activate
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
 python -m pip install -r requirements.txt
