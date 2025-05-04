@@ -1,0 +1,24 @@
+python train.py \
+  --data_dir /exchange/cvai/colorAIzer/data/coco2017 \
+  --pretrain_epochs 10 \
+  --gan_epochs 50 \
+  --freeze_strategy after_5 \
+  --lr_disc 5e-5 \
+  --grid_every 1 \
+  --ckpt_every 1 \
+  --max_images 10000 \
+  --val_pct 0.05
+
+
+python train.py \
+  --data_dir /exchange/cvai/colorAIzer/data/coco2017 \
+  --pretrain_epochs 40 \
+  --gan_epochs 50 \
+  --freeze_strategy after_5 \
+  --lr_disc 5e-5 \
+  --lr_gen 5e-4 \
+  --grid_every 1 \
+  --ckpt_every 1 \
+  --max_images 5000 \
+  --val_pct 0.05 \
+  --l1_weight 50

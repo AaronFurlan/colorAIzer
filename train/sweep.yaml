@@ -1,0 +1,17 @@
+program: train.py
+method: grid
+name: colorizer_v3_baseline
+
+parameters:
+  encoder:
+    values: ["resnet18", "resnet34"]
+  pretrain_epochs:
+    values: [0, 5]
+  l1_weight:
+    values: [50, 100]
+  freeze_strategy:
+    values: ["after_5"]
+  lr_gen:
+    values: [2e-4]
+  gan_epochs:
+    values: [40]    # shorter test-sized run
